@@ -1,0 +1,25 @@
+{
+    "name": "extra-life-project",
+    "description": "Extra Life Project",
+    "version": "1.1.0",
+    "license": "UNLICENSED",
+    "main": "index.html",
+    "author": "Jame Studzinski",
+    "repository": {},
+    "dependencies": {
+        "angular": "^1.6.9",
+        "extra-life-api": "^2.0.1",
+        "file-system": "^2.2.2",
+        "forever-agent": "^0.6.1",
+        "fs": "0.0.1-security",
+        "net": "^1.0.2",
+        "request": "^2.83.0",
+        "tls": "0.0.1",
+        "tough-cookie": "^2.3.3",
+        "tunnel-agent": "^0.6.0",
+        "typescript": "^2.7.1"
+    },
+    "scripts": {
+        "build": "webpack"
+    }
+}
