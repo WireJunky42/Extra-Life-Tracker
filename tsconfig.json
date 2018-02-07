@@ -1,0 +1,10 @@
+{
+    "files": [
+        "src/extra-life-helper.ts",
+        "src/extralifer.ts"
+    ],
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "target": "es5"
+    }
+}

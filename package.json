@@ -8,6 +8,7 @@
     "repository": {},
     "dependencies": {
         "angular": "^1.6.9",
+        "browserify": "^16.0.0",
         "extra-life-api": "^2.0.1",
         "file-system": "^2.2.2",
         "forever-agent": "^0.6.1",
@@ -16,10 +17,14 @@
         "request": "^2.83.0",
         "tls": "0.0.1",
         "tough-cookie": "^2.3.3",
-        "tunnel-agent": "^0.6.0",
-        "typescript": "^2.7.1"
+        "tunnel-agent": "^0.6.0"
     },
     "scripts": {
         "build": "webpack"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-typescript": "^4.0.0",
+        "typescript": "^2.7.1"
     }
 }
