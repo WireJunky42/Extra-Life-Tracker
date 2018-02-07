@@ -55778,7 +55778,7 @@ function pullData()
 {
     elAPI.getUserInfo(participantId, false).then(data => {
         console.log(data);
-        document.getElementById("totalAmount").innerText = data.totalRaisedAmount;
+        document.getElementById("totalAmount").innerText = "$" + data.totalRaisedAmount + "/$" + data.fundraisingGoal;
     });
 }
 
