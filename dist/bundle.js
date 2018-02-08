@@ -55773,6 +55773,9 @@ arguments[4][188][0].apply(exports,arguments)
 },{"dup":188}],281:[function(require,module,exports){
 const elAPI = require('extra-life-api');
 var participantId = "296732";
+var num = 1;
+
+var intervalId = setInterval(pullData, 60000);
 
 function pullData()
 {
@@ -55782,5 +55785,5 @@ function pullData()
     });
 }
 
-window.onload = pullData();
+window.onload = pullData;
 },{"extra-life-api":248}]},{},[281]);

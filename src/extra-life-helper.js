@@ -1,5 +1,8 @@
 const elAPI = require('extra-life-api');
 var participantId = "296732";
+var num = 1;
+
+var intervalId = setInterval(pullData, 60000);
 
 function pullData()
 {
@@ -9,4 +12,4 @@ function pullData()
     });
 }
 
-window.onload = pullData();
+window.onload = pullData;
