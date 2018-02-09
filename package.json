@@ -8,6 +8,7 @@
     "repository": {},
     "dependencies": {
         "angular": "^1.6.9",
+        "bootstrap": "^4.0.0",
         "browserify": "^16.0.0",
         "extra-life-api": "^2.0.1",
         "file-system": "^2.2.2",

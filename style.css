@@ -1,3 +1,9 @@
 .total-amount {
-    font-size: 4em;
+    font-size: 3em;
+    color:#26c2eb;
+}
+.goal {
+    text-align: center;
+    color: black;
+    font-size: 2em;
 }
