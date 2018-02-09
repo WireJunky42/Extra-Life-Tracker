@@ -1,20 +1,8 @@
 const elAPI = require('extra-life-api');
 var participantId = "296732";
-var totalRaisedAmount = 0;
-var fundraisingGoal = 0;
+var userInfo = "https://www.extra-life.org/index.cfm?fuseaction=donorDrive.participant&participantID=" +participantId +"&format=json";
 
-function pullData()
-{
-    elAPI.getUserInfo(participantId, false).then(data => {
-        console.log(data);
-        document.getElementById("totalAmount").innerText = "Extra Life Goal $" + data.totalRaisedAmount + "/$" + data.fundraisingGoal;
-        //setProgressValue(data.totalRaisedAmount, data.fundraisingGoal);
-    });
-
-    var timeoutId = setTimeout(pullData, 60000);
-}
-
-window.onload = pullData;
+window.onload = getJson();
 
 function setProgressValue(totalRaisedAmount, fundraisingGoal)
 {
@@ -22,3 +10,14 @@ function setProgressValue(totalRaisedAmount, fundraisingGoal)
     document.getElementById("progress").setAttribute("aria-valuenow", percentage);
     document.getElementById("progress").setAttribute("style", "width:" + percentage);
 }
+
+function getJson()
+{
+    $.getJSON(userInfo, function(data) {
+        console.log(data);
+        document.getElementById("totalAmount").innerText = "Extra Life Goal $" + data.totalRaisedAmount + "/$" + data.fundraisingGoal;
+    });
+
+    var timeoutId = setTimeout(pullData, 60000);
+}
+
