@@ -1,4 +1,3 @@
-const elAPI = require('extra-life-api');
 const userData = require('../userData.json')
 var PARTICIPANT_URL = "https://www.extra-life.org/index.cfm?fuseaction=donorDrive.participant&participantID={participantId}&format=json"
 
