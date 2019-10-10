@@ -1,6 +1,6 @@
 .total-amount {
     font-size: 3em;
-    color:#26c2eb;
+    color: #26c2eb;
 }
 .goal {
     text-align: center;
@@ -9,17 +9,12 @@
 }
 .header img {
     float: left;
-    width: 85;
-    height: 75px;
+    width: 150px;
+    height: 125px;
   }
   
-  .header h3 {
+.header h3 {
     position: relative;
-    top: 11px;
-    left: 10px;
+    top: 25px;
+    left: 30px;
   }
-
-.bar {
-    width: 50em;
-    height: 2em;
-}
