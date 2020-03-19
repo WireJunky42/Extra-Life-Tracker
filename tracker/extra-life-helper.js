@@ -9,14 +9,6 @@ var userData =
     "startingAmount": 0,
 };
 
-var donationGoals = [
-    {"amount": 100, "goal": "Ice Bucket Challenge"},
-    {"amount": 250, "goal": "T-Rex Costume"},
-    {"amount": 500, "goal": "Unlock Karaoke Incentive"},
-    {"amount": 750, "goal": "Incentives Half Off"},
-    {"amount": 1000, "goal": "Run Half Marathon"}
-]
-
 var PARTICIPANT_URL = "https://www.extra-life.org/api/participants/{participantId}";
 
 window.onload = getExtraLifeData();
@@ -37,15 +29,6 @@ function setProgressBar(totalRaised, goal)
 {
     var progress = (totalRaised / goal) * 100;
     $('#progress-bar').attr('aria-valuenow', progress).css('width', progress + "%").text("Extra Life Goal $" + totalRaised + "/$" + goal);
-}
-
-function getNextGoal(totalRaised) {
-    for(var i = 0; i < donationGoals.length; i++) {
-        if (totalRaised < donationGoals[i].amount) {
-            document.getElementById("nextGoal").innerText = "$" + donationGoals[i].amount + " " + donationGoals[i].goal;
-            break;
-        }
-    }
 }
 
 
